@@ -20,7 +20,6 @@ function AnimatedWord({
   const start = index / total
   const end = Math.min((index + 1) / total, 1)
 
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   const opacity = useTransform(progress, [start, end], [0.15, 1])
 
   return (
